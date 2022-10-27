@@ -1,4 +1,3 @@
-from ntpath import join
 from typing import Dict
 from node import VariableNode
 from queue import Queue
@@ -13,8 +12,6 @@ def sumProduct(graph : nx.DiGraph):
 
     passingMessage(leavesNodes, graph, False)
     passingMessage(rootNode, graph, True)
-
-    return
 
 def getMarginals(graph : nx.DiGraph) -> Dict:
     marginals = {}
